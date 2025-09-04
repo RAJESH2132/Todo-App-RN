@@ -1,21 +1,22 @@
 import useTheme from "@/hooks/useTheme";
-import { StyleSheet, Text, Touchable, TouchableOpacity, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 export default function Index() {
-  const {toggleDarkMode} = useTheme()
+  const { toggleDarkMode } = useTheme();
+
   return (
-    <View
-      style={styles.container}
-    >
-      <TouchableOpacity onPress={toggleDarkMode}><Text>theme</Text></TouchableOpacity>
+    <View style={styles.container}>
+      <TouchableOpacity onPress={toggleDarkMode}>
+        <Text>theme</Text>
+      </TouchableOpacity>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container:{
+  container: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-  }
-})
+  },
+});

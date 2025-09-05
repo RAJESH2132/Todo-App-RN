@@ -19,7 +19,7 @@ export default function Index() {
       <SafeAreaView style={homeStyles.safeArea}>
         <Header />
         <TouchableOpacity onPress={toggleDarkMode}>
-          <Text>theme toggle</Text>
+          <Text>Theme toggle</Text>
         </TouchableOpacity>
       </SafeAreaView>
     </LinearGradient>

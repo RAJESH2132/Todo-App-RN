@@ -21,7 +21,7 @@ export default function Index() {
         <Header />
         <TodoInput />
         <TouchableOpacity onPress={toggleDarkMode}>
-          <Text>theme</Text>
+          <Text>Theme toggle</Text>
         </TouchableOpacity>
       </SafeAreaView>
     </LinearGradient>

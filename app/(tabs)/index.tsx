@@ -24,7 +24,7 @@ import Header from "../../components/Header";
 type Todo = Doc<"todos">;
 
 export default function Index() {
-  const { toggleDarkMode, colors } = useTheme();
+  const { colors } = useTheme();
 
   const [editingId, setEditingId] = useState<Id<"todos"> | null>(null);
   const [editText, setEditText] = useState("");
@@ -190,12 +190,6 @@ export default function Index() {
       <SafeAreaView style={homeStyles.safeArea}>
         <Header />
         <TodoInput />
-        <Text
-          style={{ color: "white", textAlign: "center", fontSize: 30 }}
-          onPress={toggleDarkMode}
-        >
-          dark
-        </Text>
         <FlatList
           data={todos}
           renderItem={renderTodoItem}
